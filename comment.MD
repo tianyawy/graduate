@@ -4,6 +4,7 @@
 * 二维矢量数据可视化的一般流程 地理信息系统导论
 * 考虑下百度的路由服务怎么使用
 * 拓扑关系矩阵 1111
+* 瓦片点图的地图分辨率公式在服务器端提供？还是由UI层负责换算？基于Rest的瓦片地图Web服务研究。
 
 * 开头可以加上企业私有云（数据安全性，专题图层等个性化）和公有云（成本低）  
   * 商业GIS组件不支持公有云（公有云服务的自我封闭和组件不支持）
@@ -20,6 +21,11 @@
 * 论文模块划分按照矢量数据处理，栅格数据处理，位置服务，地图UI四大子系统划分
 
 * OGIS提出的空间几何体的基本构件 P1094
+
+* 在基于REST的瓦片地图Web服务研究总有 **客户端瓦片数据的预提取**
+
+*A tiled layer links to its tile matrix set through a tileMatrixSet URI that points to a TileMatrixSet section that completely defines it as previously explained. A layer can use a specific TileMatrixSet that describes a region adjusted to the actual content of this layer. In this case, the optional tileMatrixSetLimits section will not be used and changes in spatial extension of the layer can affect the minimum bounding box of the layer forcing to redefine the TopLeftCorner of each TileMatrix and that will end up changing the TileCol,TileRow indices thereby invalidating any previously cached tile. To
+在OGC的文档中提到瓦片矩阵
 
 * 用户故事：A快递公司某分部发现因为限号等原因，自己负责区域的交通状况每日不同，
 同时因为收发件需求的实时变化，以往快递员按照固定路线巡视的方案已经不能满足公司业务的
