@@ -1,12 +1,20 @@
 #论文查漏补空
 * 以四叉树结构对栅格数据集合进行索引，呈影像金字塔状。而矢量数据集合支持分层存储，同层次的数据以图的形式表示。
 * 影像金字塔（Pyramid）地理信息系统导论 P3291
-* 二维矢量数据可视化的一般流程 地理信息系统导论
+* 论文主题改为移动GIS的可视化及数据采集
 * 考虑下百度的路由服务怎么使用
 * 拓扑关系矩阵 1111
 * 瓦片点图的地图分辨率公式在服务器端提供？还是由UI层负责换算？基于Rest的瓦片地图Web服务研究。
-
-
+* 基于栅格地图的专题地图内容
+* 空间数据的描述 栅格数据和矢量数据的关系
+* 基本空间分析中，有八方邻和四方邻计算公式，分析栅格周围的栅格号
+* 几何量算公式：对于矢量数据而言
+* 空间数据包括几何数据、属性数据、关系数据和元数据，矢量数据结构指向几何数据
+* 3.31 矢量数据结构
+* 将论文的核心改为地理数据在移动GIS中的可视化问题和后续的操作
+* 空间数据计算可以基于欧几里得空间（向量）
+* 地理坐标系统：地理空间与统一的空间数据基础的建立(图 2. 1 　空间数据基础的建立)
+* 注意论述是要提出基于二维空间的可视化
 
 * 开头可以加上企业私有云（数据安全性，专题图层等个性化）和公有云（成本低）  
   * 商业GIS组件不支持公有云（公有云服务的自我封闭和组件不支持）
@@ -28,7 +36,7 @@
 
 * 在基于REST的瓦片地图Web服务研究总有 **客户端瓦片数据的预提取**
 
-*A tiled layer links to its tile matrix set through a tileMatrixSet URI that points to a TileMatrixSet section that completely defines it as previously explained. A layer can use a specific TileMatrixSet that describes a region adjusted to the actual content of this layer. In this case, the optional tileMatrixSetLimits section will not be used and changes in spatial extension of the layer can affect the minimum bounding box of the layer forcing to redefine the TopLeftCorner of each TileMatrix and that will end up changing the TileCol,TileRow indices thereby invalidating any previously cached tile. To
+* A tiled layer links to its tile matrix set through a tileMatrixSet URI that points to a TileMatrixSet section that completely defines it as previously explained. A layer can use a specific TileMatrixSet that describes a region adjusted to the actual content of this layer. In this case, the optional tileMatrixSetLimits section will not be used and changes in spatial extension of the layer can affect the minimum bounding box of the layer forcing to redefine the TopLeftCorner of each TileMatrix and that will end up changing the TileCol,TileRow indices thereby invalidating any previously cached tile. To
 在OGC的文档中提到瓦片矩阵
 
 * Each tile matrix set defines its own set of scale levels corresponding with the contained tile matrices. Each layer references one or more tile matrix sets. Although each layer could reference a different tile matrix set, it is likely that a server will offer many layers with the same tile matrix set reference.
